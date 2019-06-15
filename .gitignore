@@ -247,8 +247,21 @@ fabric.properties
 
 # Chats and results
 mychats/
-results/
-stable_requirements.txt
-main.py
-.whatstkenv/
-.eenv/
+notebooks/Untitled.ipynb
+.whatstk
+todos.md
+examples
+
+
+#tox stuff
+tox.ini
+.coveragerc
+requirements-flake.txt
+requirements-test.txt
+setup.cfg
+testreport.html
+testreport.xml
+version-info.cfg
+
+docs
+version-info.cfg
