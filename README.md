@@ -34,7 +34,7 @@ chat = WhatsAppChat.from_txt(filename, hformat)
 counts = interventions(chat, 'date', msg_length=False)
 counts_cumsum = counts.cumsum()
 
-
+# Plot result
 from plotly.offline import plot
 from whatstk.plot import vis
 plot(vis(counts_cumsum, 'cummulative characters sent per day'))
