@@ -10,7 +10,7 @@ regex_simplifier = {
     '%H': '(?P<hour>\d{1,2})',
     '%M': '(?P<minutes>\d{2})',
     '%S': '(?P<seconds>\d{2})',
-    '%P': '(?P<ampm>[AaPp]M)',
+    '%P': '(?P<ampm>[AaPp].? ?[Mm].?)',
     '%name': '(?P<username>[^:]*)'
 }
 
@@ -74,11 +74,17 @@ def parse_line(text, headers, i):
     else:
         hour = int(result_['hour'])
 
+    # Check format of year. If year is 2-digit represented we add 2000
+    if len(result_['year']) == 2:
+        year = int(result_['year']) + 2000
+    else:
+        year = int(result_['year'])
+
     if 'seconds' not in result_:
-        date = datetime(int(result_['year']), int(result_['month']), int(result_['day']), hour,
+        date = datetime(year, int(result_['month']), int(result_['day']), hour,
                         int(result_['minutes']))
     else:
-        date = datetime(int(result_['year']), int(result_['month']), int(result_['day']), hour,
+        date = datetime(year, int(result_['month']), int(result_['day']), hour,
                         int(result_['minutes']), int(result_['seconds']))
     username = result_['username']
     message = get_message(text, headers, i)
