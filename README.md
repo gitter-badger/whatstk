@@ -45,22 +45,21 @@ Once you have your `WhatsAppChat` object, you can access the loaded data using t
 ```python
 chat.df.info()
 ```
-> <details><summary>See results</summary>
-> <p>
-> 
-> ```
-> <class 'pandas.core.frame.DataFrame'>
-> DatetimeIndex: 18 entries, 2016-08-06 13:23:00 to 2016-10-31 12:23:00
-> Data columns (total 2 columns):
->  #   Column    Non-Null Count  Dtype 
-> ---  ------    --------------  ----- 
->  0   username  18 non-null     object
->  1   message   18 non-null     object
-> dtypes: object(2)
-> memory usage: 432.0+ bytes
-> ```
-</p>
-</details>
+<details><summary>See results</summary>
+<p>
+
+```
+<class 'pandas.core.frame.DataFrame'>
+DatetimeIndex: 18 entries, 2016-08-06 13:23:00 to 2016-10-31 12:23:00
+Data columns (total 2 columns):
+ #   Column    Non-Null Count  Dtype 
+---  ------    --------------  ----- 
+ 0   username  18 non-null     object
+ 1   message   18 non-null     object
+dtypes: object(2)
+memory usage: 432.0+ bytes
+```
+</p></details>
 
 _Note 1: By default, header auto-detect feature is used. If it does not work, use hformat variable to specify your
 header format. In our example, it would be: `hformat = '%d.%m.%y, %H:%M - %name:'`. More on this [here](#whats-the-header)_.
