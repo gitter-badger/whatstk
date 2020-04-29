@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.com/lucasrodes/whatstk.svg?branch=develop)](https://travis-ci.com/lucasrodes/whatstk)
 [![Python 3.6](https://img.shields.io/badge/python-3.5|3.7|3.8-blue.svg)](https://www.python.org/downloads/release/python-3/)
-[![Documentation](https://img.shields.io/badge/documentation-royalblue.svg)](docs/index.md)
+[![Documentation](https://img.shields.io/badge/documentation-royalblue.svg)](docs/index.html)
 [![GitHub license](https://img.shields.io/github/license/lucasrodes/whatstk.svg)](https://github.com/lucasrodes/whatstk/blob/master/LICENSE)
 
 > [Get the Desktop App](https://lcsrg.me/whatstk-gui)
@@ -26,7 +26,7 @@ pip install whatstk
 
 Make sure to first obtain the chat to be analyzed. Export it as a `txt` file using your phone (more info on this [here](https://lcsrg.me/whatstk-gui/#faqs)).
 
-Check more on how-to use it in the [docs](docs/index.md)
+Check more on how-to use it in the [docs](docs/index.html).
 
 #### Obtain a dataframe from your chat log file
 
