@@ -45,8 +45,6 @@ Once you have your `WhatsAppChat` object, you can access the loaded data using t
 ```python
 chat.df.info()
 ```
-<details><summary>See results</summary>
-<p>
 
 ```
 <class 'pandas.core.frame.DataFrame'>
@@ -59,7 +57,6 @@ Data columns (total 2 columns):
 dtypes: object(2)
 memory usage: 432.0+ bytes
 ```
-</p></details>
 
 _Note 1: By default, header auto-detect feature is used. If it does not work, use hformat variable to specify your
 header format. In our example, it would be: `hformat = '%d.%m.%y, %H:%M - %name:'`. More on this [here](#whats-the-header)_.
