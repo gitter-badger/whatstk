@@ -71,6 +71,7 @@ class WhatsAppChat:
             pandas.DataFrame: DataFrame containing the chat.
 
         """
+        print(hformat)
         # generate regex
         r, r_x = generate_regex(hformat=hformat)
         # print(r)
