@@ -38,7 +38,6 @@ class WhatsAppChat:
                                    " input argument `hformat`.")
         elif not (hformat or auto_header):
             raise ValueError("If auto_header is False, hformat can't be None.")
-
         # Bracket is reserved character in RegEx, add backslash before them.
         hformat.replace('[', '\[').replace(']', '\]')
         # Prepare DataFrame
@@ -74,7 +73,6 @@ class WhatsAppChat:
         print(hformat)
         # generate regex
         r, r_x = generate_regex(hformat=hformat)
-        # print(r)
 
         # Parse chat to DataFrame
         df = parse_chat(text, r)
